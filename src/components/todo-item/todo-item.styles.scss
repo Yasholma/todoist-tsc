@@ -1,0 +1,44 @@
+.todo-item {
+  box-shadow: 0 0 0.2rem rgba($color: #000, $alpha: 0.4);
+  margin: 0.5rem 0;
+  padding: 0.8rem 1.2rem 0.8rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 6px solid aqua;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: teal;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &.completed {
+    background: seagreen;
+    color: #fff;
+  }
+}
+
+.title {
+  font-weight: 300;
+}
+
+.buttons {
+  display: flex;
+}
+
+.remove {
+  cursor: pointer;
+  margin-left: 0.3rem;
+  &:hover {
+    color: red;
+  }
+}
+
+.complete {
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+  }
+}

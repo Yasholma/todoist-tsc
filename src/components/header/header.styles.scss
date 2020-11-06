@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  border-left: 4px solid aqua;
+  box-shadow: 0.3rem 0 0.2rem rgba($color: #000000, $alpha: 0.4);
+}
+
+.logo {
+  a {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      color: aqua;
+    }
+
+    span {
+      margin: 0 0.3rem;
+      margin-top: 0.2rem;
+    }
+  }
+}
+
+.nav {
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-item {
+    margin-right: 1rem;
+  }
+
+  &-link {
+    color: #323834;
+    font-weight: 300;
+    font-size: 0.9rem;
+    &:hover,
+    &.active {
+      color: aqua;
+    }
+  }
+}
